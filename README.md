@@ -351,6 +351,13 @@ def recommend(restaurants):
             return choice
 ```
 
+# Useful python libraries to know
+- random
+- math
+- datetime
+- collections
+- csv
+
 # What's next?
 - Web development: [Django](http://djangoproject.com) or [Flask](http://flask.pocoo.org/)
 - Data science: [pandas](http://pandas.pydata.org/)
