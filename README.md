@@ -337,10 +337,12 @@ and one by one pops out a restaurant as a recommendation.
 What happens when we deplete the list and need to recommend again, let's go by the following algorithm:
 - Each time, randomly recommend a restaurant from the list that has not been recommended in the last 4 tries
 
+We're going to create a file called recommender.py and type the below in there.
+
 ```python
-# Keep track of the recommendations
 import random
 
+# Keep track of the recommendations
 recommendation_history = []
 restaurants = ["Laut", "Random String", "Chipotle", "Eataly", "Sophie's Cuban", "Chop't", "Potbelly's"]
 
