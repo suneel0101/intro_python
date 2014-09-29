@@ -222,7 +222,7 @@ Create a dictionary called `class_data` with the following keys:
 
 # If/Else
 If/else statements are blocks of our code that allow us to do different things based on some logical condition
-Let's learn the syntax:
+Let's learn the syntax, note INDENTATION is important:
 ```python
 >>> x = 5
 >>> if x > 4:
