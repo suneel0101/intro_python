@@ -41,11 +41,13 @@ Practice question - try these out in the shell:
 ```
 
 Explanations:
+```
 In 1., we learned that you can chain operations
 In 2 and 3, we learned that order matters and you can use parentheses to indicate the order, as part of the usual mathematical order of operations.
 In 4 and 5, we learned about the equality operator.
 In 6 and 7, we learned about inequality comparions like less than or greater than equal to.
 In 8 and 9, we learned about the not-equal-to operator.
+```
 
 Now let's talk variables. What's a variable? It's a placeholder for a value.
 ```python
