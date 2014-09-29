@@ -170,6 +170,16 @@ Practice problem:
 - Get the length of the list
 ```
 
+Let's learn about slicing:
+```python
+>>> y = [1, 2, 3, 4, 5, 6, 7, 8]
+>>> y[2:]
+>>> y[:4]
+>>> y[:-1]
+>>> y[-1:3]
+>>> y[:]
+```
+
 # Dictionaries
 Dictionaries are also massively useful. You can think of them as maps, between as set of keys and their corresponding values.
 Let's look at one in the shell to better understand how they work and how they can be useful:
@@ -304,6 +314,42 @@ Practice problem: Write a function that takes a list of numbers and retursn True
 # 'Real-life' problem: Restaurant Recommendation Engine
 - figuring out where to eat lunch everyday is annoying
 - let's automate it
+- First version is going to be given a list of restaurants, randomly pop out a recommendation until the list is depleted
+
+Let's learn about the random library, a pretty useful builtin python library:
+```python
+>>> import random # this is how we make accessible the random library code
+>>> numbers = [1, 3, 5, 6, 7]
+>>> shuffled = random.shuffle(numbers)
+>>> for number in shuffled:
+        print number.pop()
+```
+
+Problem 1:
+```
+Given a list of restaurants,
+["Laut", "Random String", "Chipotle", "Eataly", "Sophie's Cuban", "Chop't", "Potbelly's"]
+
+Write a function that takes the list of restaurants, shuffles the list,
+and one by one pops out a restaurant as a recommendation.
+```
+
+What happens when we deplete the list and need to recommend again, let's go by the following algorithm:
+- Each time, randomly recommend a restaurant from the list that has not been recommended in the last 4 tries
+
+```python
+# Keep track of the recommendations
+import random
+
+recommendation_history = []
+restaurants = ["Laut", "Random String", "Chipotle", "Eataly", "Sophie's Cuban", "Chop't", "Potbelly's"]
+
+def recommend(restaurants):
+    shuffled = random.shuffle(restaurants)
+    for choice in shuffled:
+        if choice not in recommendation_history[-1: -4]:
+            return choice
+```
 
 # What's next?
 - Web development: [Django](http://djangoproject.com) or [Flask](http://flask.pocoo.org/)
