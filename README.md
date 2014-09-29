@@ -28,6 +28,7 @@ What's the difference between 2.0 and 2?
 3.5
 ```
 Practice question - try these out in the shell:
+```
 1. 2 * 7 * 3.5
 2. 3 + 5 - (2 * 6)
 3. (3 + 5 - 2) * 6
@@ -37,6 +38,7 @@ Practice question - try these out in the shell:
 7. 5 >= 4
 8. 9 != 9
 9. 8 != 9
+```
 
 Explanations:
 In 1., we learned that you can chain operations
@@ -58,12 +60,14 @@ Now let's talk variables. What's a variable? It's a placeholder for a value.
 
 Practice question:
 Given x=10, y=2, predict the answers to the following and then try them out in the shell:
+```
 1. x + y
 2. x * y
 3. (x + 7) / y
 4. (x + 7.0) / y
 5. x == y
 6. x != y
+```
 
 Now let's talk about Booleans.
 Simply put, a boolean variable is either True or False, and every python object or data has a boolean value.
@@ -97,11 +101,13 @@ Hello World!
 ```
 
 Practice problem:
+```
 - Set a variable called `name` equal to your full name.
 - Set a variable called `first_name` equal to your first name.
 - Set a variable called `last_name` equal to your last name.
 - Then combine `first_name` and `last_name` so that it equals your full name, and save this in a variable called `full_name`.
 - Prove using the == operator that they are equal.
+```
 
 Before we move onto lists, let's learn how to print things
 ```python
@@ -150,6 +156,7 @@ False
 ```
 
 Practice problem:
+```
 - Create a list called `restaurants` consisting of the following elements in this order:
 "Laut", "Random String", "Chipotle", "Eataly", "Sophie's Cuban", "Chop't", "Potbelly's"
 - Get the third element of the list
@@ -159,6 +166,7 @@ Practice problem:
 - Check if 'Chipotle' is in the list
 - Check if 'Random String' is in the list
 - Get the length of the list
+```
 
 # Dictionaries
 Dictionaries are also massively useful. You can think of them as maps, between as set of keys and their corresponding values.
@@ -188,6 +196,7 @@ print person
 >>> "secret" in person
 ```
 Practice problem:
+```
 Create a dictionary called `class_data` with the following keys:
 - "course_name", which should correspond to "Intro to Python"
 - "student_count", which should correspond to number of students, say 20
@@ -197,6 +206,7 @@ Create a dictionary called `class_data` with the following keys:
     - "can_program" (True)
 - get the student count from the dictionary
 - get the instructor name from the dictionary
+```
 
 # If/Else
 If/else statements are blocks of our code that allow us to do different things based on some logical condition
@@ -221,9 +231,11 @@ Hello
 ```
 
 Practice problem:
+```
 Given x = "John Jameson",
 - Construct an if else statement according to this logic: if "John" is in x, print "John is in x", otherwise print "John is not in x"
 - Construct an if/elif/else statement according to this logic: if "roger" is in x, print "Hi Roger!", elif the length of x is greater than 20, print "thats a long string", else print "Oh well!"
+```
 
 # Loops
 Loops let us pass through a set of values and do some operation on each.
@@ -247,11 +259,13 @@ Before we move on to some practice problems, here is a useful function:
 ```
 
 Practice problems:
+```
 - Construct a list of numbers between 0 and 1000 that are divisible by 33
 - Given the following list
 ["Donald Duck", "Mickey Mouse", "Daffy Duck", "Goofy", "Minnie Mouse", "Pluto"]
 Get the sum of all of the lengths of these strings.
 - Given the above list, create a list of all of the elements that have the letter "d" or the letter "m" in them
+```
 
 # Functions
 Functions are the heart and soul of python. Functions are blocks of code that take an input and based on some rules produce an output.
@@ -267,8 +281,10 @@ Let's learn the syntax of functions:
 a and b are variables that the function `add` takes
 
 Practice problems:
+```
 - create function `multiply` that takes two variables and returns their product
 - create function `subtract` that takes two variables and returns their difference
+```
 
 Let's write a function that takes a variable, which is a list of numbers, and then returns just the ones that are divisible by 33.
 
