@@ -1,3 +1,7 @@
+# What do you need?
+- Terminal for Mac users, Command Prompt for Windows users
+- the python command
+
 # The Basic Data Types
 What are the basic data types?
 - Integers, e.g. 1, 2, 3
@@ -359,6 +363,15 @@ def recommend(restaurants):
 - datetime
 - collections
 - csv
+
+# Crazy cool python libraries to know
+- pandas
+- nlptoolkit
+
+# So many cool things you can do with python
+- AI/ Machine learning/ Natural language processing
+- Web development
+- Data science
 
 # What's next?
 - Web development: [Django](http://djangoproject.com) or [Flask](http://flask.pocoo.org/)
