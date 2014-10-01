@@ -152,7 +152,7 @@ IndexError
 >>> x.append("hello")
 >>> len(x)
 6
->>> x[6]
+>>> x[5]
 "Hello"
 >>> # can remove elements, defaults to popping off the last one
 >>> x.pop()
@@ -184,9 +184,7 @@ Let's learn about slicing:
 >>> y = [1, 2, 3, 4, 5, 6, 7, 8]
 >>> y[2:]
 >>> y[:4]
->>> y[:-1]
->>> y[-1:3]
->>> y[:]
+>>> y[1:3]
 ```
 
 # Dictionaries
