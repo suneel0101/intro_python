@@ -1,3 +1,6 @@
+# Instructor
+name - Suneel Chakravorty
+email - chakravorty@post.harvard.edu
 # What do you need?
 - Terminal for Mac users, Command Prompt for Windows users
 - the python command
