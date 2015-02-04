@@ -354,8 +354,8 @@ recommendation_history = []
 restaurants = ["Laut", "Random String", "Chipotle", "Eataly", "Sophie's Cuban", "Chop't", "Potbelly's"]
 
 def recommend(restaurants):
-    shuffled = random.shuffle(restaurants)
-    for choice in shuffled:
+    random.shuffle(restaurants)
+    for choice in restaurants:
         if choice not in recommendation_history[-1: -4]:
             return choice
 ```
