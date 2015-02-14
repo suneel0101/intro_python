@@ -1,3 +1,6 @@
+# Objective
+Get you guys a solid foundation in Python, which is useful if you want to build for the web or do any machine learning or data science.
+
 # Instructor
 name - Suneel Chakravorty
 
