@@ -255,9 +255,9 @@ There are different kinds of loops, for loops and while loops. They're quite sim
 ```python
 >>> numbers = [1, 2, 8, 7, 9, 10]
 >>> odds = []
->>> for number in numbers:
-        if number % 2:
-            odds.append(number)
+>>> for cat in numbers:
+        if cat % 2 == 1:
+            odds.append(cat)
 
 print odds
 ```
