@@ -123,17 +123,6 @@ Practice problem:
 - Prove using the == operator that they are equal.
 ```
 
-Before we move onto lists, let's learn how to print things
-```python
->>> print "Hello"
-"Hello"
->>> "Hello"
-Hello
-```
-What's the difference?
-
-Practice problem: Remember `name` from the previous problem? Print it out in the shell.
-
 # Lists
 Lists is a super useful data type.
 It's an ordered collection of items, which you can modify by adding or removing elements.
