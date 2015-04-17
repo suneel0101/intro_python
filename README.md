@@ -372,5 +372,5 @@ def recommend(restaurants):
 - Web development: [Django](http://djangoproject.com) or [Flask](http://flask.pocoo.org/)
 - Data science: [pandas](http://pandas.pydata.org/)
 - Tutorial: [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
+- [Practice problems with full solutions](https://github.com/suneel0101/python-powerup)
 - Practice problems: [Project Euler](https://projecteuler.net/)
-- More GA: [Advanced Python class on Oct 20](https://generalassemb.ly/education/advanced-python-workshop/new-york-city/8151)
