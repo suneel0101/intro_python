@@ -1,6 +1,9 @@
 # Objective
 Give students a solid foundation in Python, which they can use to build for the web or do data science, data analytics and beyond.
 
+# Why Python?
+Let's discuss.
+
 # Where We'll Code
 Open this link in the browser: [Repl.it](https://repl.it/languages/python3)
 
