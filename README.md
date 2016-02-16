@@ -30,9 +30,8 @@ We can do math in the shell.
 >>>
 ```
 
-```
-Practice question - try these out in the shell:
-```
+## Practice question - try these out in the shell:
+```python
 1. 2 * 7 * 3.5
 2. 3 + 5 - (2 * 6)
 3. (3 + 5 - 2) * 6
