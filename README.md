@@ -1,14 +1,8 @@
 # Objective
-Get you guys a solid foundation in Python, which is useful if you want to build for the web or do any machine learning or data science.
+Give students a solid foundation in Python, which they can use to build for the web or do data science, data analytics and beyond.
 
-# Instructor
-name - Suneel Chakravorty
-
-email - chakravorty@post.harvard.edu
-
-# What do you need?
-- Terminal for Mac users, Command Prompt for Windows users
-- the python command
+# Where We'll Code
+Open this link in the browser: [Repl.it](https://repl.it/languages/python3)
 
 # The Basic Data Types
 What are the basic data types?
@@ -18,6 +12,7 @@ What are the basic data types?
 - bool, True or False
 - None, which just corresponds to empty or null, if you've used other languages
 
+# Numerical Data
 Let's start with integers and floats.
 
 Let's go into the python shell.
@@ -32,12 +27,6 @@ We can do math in the shell.
 >>>
 ```
 
-What's the difference between 2.0 and 2?
-```python
->>> 7/2
-3
->>> 7/2.0
-3.5
 ```
 Practice question - try these out in the shell:
 ```
@@ -52,15 +41,7 @@ Practice question - try these out in the shell:
 9. 8 != 9
 ```
 
-Explanations:
-```
-In 1., we learned that you can chain operations
-In 2 and 3, we learned that order matters and you can use parentheses to indicate the order, as part of the usual mathematical order of operations.
-In 4 and 5, we learned about the equality operator.
-In 6 and 7, we learned about inequality comparions like less than or greater than equal to.
-In 8 and 9, we learned about the not-equal-to operator.
-```
-
+# Variables
 Now let's talk variables. What's a variable? It's a placeholder for a value.
 ```python
 >>> x = 5
@@ -72,17 +53,15 @@ Now let's talk variables. What's a variable? It's a placeholder for a value.
 5
 ```
 
-Practice question:
-Given x=10, y=2, predict the answers to the following and then try them out in the shell:
-```
-1. x + y
-2. x * y
-3. (x + 7) / y
-4. (x + 7.0) / y
-5. x == y
-6. x != y
+# Assignment vs Equality Check
+
+```python
+>>> x = 2
+>>> x == 5
+>>> x = 5
 ```
 
+# Boolean: True or False
 Now let's talk about Booleans.
 Simply put, a boolean variable is either True or False, and every python object or data has a boolean value.
 We can find out what the true-false value is by using bool()
@@ -104,6 +83,8 @@ False
 >>> 7 == 0
 False
 ```
+
+# Strings
 Last stop on our journey into basic data types: Strings
 A string is a sequence of characters, for example "Hello" or "My id # is 1235!"
 Let's try a few in our shell:
@@ -114,7 +95,7 @@ Hello World!
 >>> 1 + "world"
 ```
 
-Practice problem:
+# Practice problem
 ```
 - Set a variable called `name` equal to your full name.
 - Set a variable called `first_name` equal to your first name.
@@ -158,7 +139,7 @@ False
 >>> 1 in x
 ```
 
-Practice problem:
+# Practice problem
 ```
 - Create a list called `restaurants` consisting of the following elements in this order:
 "Laut", "Random String", "Chipotle", "Eataly", "Sophie's Cuban", "Chop't", "Potbelly's"
@@ -169,14 +150,6 @@ Practice problem:
 - Check if 'Chipotle' is in the list
 - Check if 'Random String' is in the list
 - Get the length of the list
-```
-
-Let's learn about slicing:
-```python
->>> y = [1, 2, 3, 4, 5, 6, 7, 8]
->>> y[2:]
->>> y[:4]
->>> y[1:3]
 ```
 
 # Dictionaries
@@ -195,9 +168,9 @@ Let's look at one in the shell to better understand how they work and how they c
 >>> person["random"]
 KeyError
 >>> person["location"] = "New York"
->>> person["deepest_darkest_secret"] = "Loves Vampire Diaries"
+>>> person["hometown"] = "Jupiter, Florida"
 print person
->>> del person["deepest_darkest_secret"]
+>>> del person["hometown"]
 print person
 >>> person.keys()
 >>> person.values()
@@ -206,14 +179,14 @@ print person
 >>> "name" in person
 >>> "secret" in person
 ```
-Practice problem:
+
+# Practice problem
 ```
 Create a dictionary called `class_data` with the following keys:
-- "course_name", which should correspond to "Intro to Python"
+- "course_name", which should correspond to "Betaworks Intro to Python"
 - "student_count", which should correspond to number of students, say 20
 - "instructor", which should itself be a dictionary with the following keys
     - "name" ("Suneel")
-    - "gender" ("M")
     - "can_program" (True)
 - get the student count from the dictionary
 - get the instructor name from the dictionary
@@ -241,9 +214,9 @@ Hello
         print "Hi"
 ```
 
-Practice problem:
+# Practice problem:
 ```
-Given x = "John Jameson",
+Given x = "John Adams",
 - Construct an if else statement according to this logic: if "John" is in x, print "John is in x", otherwise print "John is not in x"
 - Construct an if/elif/else statement according to this logic: if "roger" is in x, print "Hi Roger!", elif the length of x is greater than 20, print "thats a long string", else print "Oh well!"
 ```
@@ -255,9 +228,9 @@ There are different kinds of loops, for loops and while loops. They're quite sim
 ```python
 >>> numbers = [1, 2, 8, 7, 9, 10]
 >>> odds = []
->>> for cat in numbers:
-        if cat % 2 == 1:
-            odds.append(cat)
+>>> for zebra in numbers:
+        if zebra % 2 == 1:
+            odds.append(zebra)
 
 print odds
 ```
@@ -269,7 +242,7 @@ Before we move on to some practice problems, here is a useful function:
 >>> range(10)
 ```
 
-Practice problems:
+# Practice problems
 ```
 - Construct a list of numbers between 0 and 1000 that are divisible by 33
 - Given the following list
@@ -295,78 +268,39 @@ Practice problems:
 ```
 - create function `multiply` that takes two variables and returns their product
 - create function `subtract` that takes two variables and returns their difference
+- write a function that takes a variable, which is a list of numbers, and then returns just the ones that are divisible by 33.
+- write a function that takes a list of numbers and returns True if the sum of the numbers is even and False otherwise.
 ```
 
-Let's write a function that takes a variable, which is a list of numbers, and then returns just the ones that are divisible by 33.
+# Using Other Libraries
+What is a library? A reusable, collection of code that someone else (or you) has already written. Some great built-in libraries:
+- `random`
+- `csv`
+- `collections`
+- `datetime`
 
+To use other libraries, we need to be able to:
+- understand the documentation of that library
+- understand what the inputs and outputs of their functions are
+- how to call those functions correctly
+
+Let's start with the random library.
+
+## The `random` library.
+Our first step is to locate the documentation. Google "python random". It should take you [here](https://docs.python.org/2/library/random.html)
+
+Let's import the library
 ```python
-def div_by_33(numbers):
-    by_33 = []
-    for number in numbers:
-        if number % 33 == 0:
-            by_33.append(number)
-    return by_33
+>>> import random
+>>> dir(random)
 ```
 
-Practice problem: Write a function that takes a list of numbers and retursn True if the sum of the numbers is even and False otherwise.
+How does python know what `random` is and how to find the code? Because it comes built-in to the Python language. Other libraries such as `pandas` will have to be installed prior to use.
 
-# 'Real-life' problem: Restaurant Recommendation Engine
-- figuring out where to eat lunch everyday is annoying
-- let's automate it
-- First version is going to be given a list of restaurants, randomly pop out a recommendation until the list is depleted
+### Exercises
+1. Find the `randint` function in the documentation and explain to your neighbor what it does and how to use it.
+2. Again, with your partner, use the `randint` function to generate a random number between 1 and 125.
 
-Let's learn about the random library, a pretty useful builtin python library:
-```python
->>> import random # this is how we make accessible the random library code
->>> numbers = [1, 3, 5, 6, 7]
->>> shuffled = random.shuffle(numbers)
->>> for number in shuffled:
-        print number.pop()
-```
-
-Problem 1:
-```
-Given a list of restaurants,
-["Laut", "Random String", "Chipotle", "Eataly", "Sophie's Cuban", "Chop't", "Potbelly's"]
-
-Write a function that takes the list of restaurants, shuffles the list,
-and one by one pops out a restaurant as a recommendation.
-```
-
-What happens when we deplete the list and need to recommend again, let's go by the following algorithm:
-- Each time, randomly recommend a restaurant from the list that has not been recommended in the last 4 tries
-
-We're going to create a file called recommender.py and type the below in there.
-
-```python
-import random
-
-# Keep track of the recommendations
-recommendation_history = []
-restaurants = ["Laut", "Random String", "Chipotle", "Eataly", "Sophie's Cuban", "Chop't", "Potbelly's"]
-
-def recommend(restaurants):
-    random.shuffle(restaurants)
-    for choice in restaurants:
-        if choice not in recommendation_history[-1: -4]:
-            return choice
-```
-
-# Useful python libraries to know
-- random
-- math
-- datetime
-- collections
-- csv
-
-# Crazy cool python libraries to know
-- pandas
-- nlptoolkit
-
-# So many cool things you can do with python
-- AI/ Machine learning/ Natural language processing
-- Web development
-- Data science
 
 # What's next?
 - Web development: [Django](http://djangoproject.com) or [Flask](http://flask.pocoo.org/)
